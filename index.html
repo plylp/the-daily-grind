@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Grind - 精品咖啡站</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入Google字体（新增手写体提升质感） -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <!-- 引入Font Awesome图标（免费图标库） -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">
+                <i class="fa-solid fa-mug-hot"></i> The Daily Grind
+            </h1>
+            <nav class="nav-links">
+                <a href="#home" class="nav-link">首页</a>
+                <a href="#about" class="nav-link">关于我们</a>
+                <a href="#menu" class="nav-link">咖啡菜单</a>
+                <a href="#contact" class="nav-link">联系我们</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero区（新增装饰文字、优化按钮） -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-tagline" style="font-family: 'Playfair Display', serif; font-style: italic;">Since 2023</p>
+            <h2>一杯好咖啡，开启美好一天</h2>
+            <p>精选全球优质咖啡豆，手工现磨，只为纯粹口感</p>
+            <a href="#menu" class="btn btn-primary">立即点餐 <i class="fa-solid fa-arrow-right ml-2"></i></a>
+        </div>
+        <!-- 装饰元素：咖啡豆图标 -->
+        <div class="hero-decoration">
+            <i class="fa-solid fa-bean-brown"></i>
+            <i class="fa-solid fa-bean-brown"></i>
+            <i class="fa-solid fa-bean-brown"></i>
+        </div>
+    </section>
+
+    <!-- 分割线装饰 -->
+    <div class="divider">
+        <div class="divider-line"></div>
+        <i class="fa-solid fa-coffee divider-icon"></i>
+        <div class="divider-line"></div>
+    </div>
+
+    <!-- 关于我们（新增图标、优化布局） -->
+    <section id="about" class="about section-animate">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-title-line"></span> 关于我们 <span class="section-title-line"></span>
+            </h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="https://picsum.photos/id/431/600/400" alt="咖啡门店环境" class="img-hover-zoom">
+                </div>
+                <div class="about-text">
+                    <div class="about-icon">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3>我们的故事</h3>
+                    <p>The Daily Grind 始于2023年，是一家专注于精品咖啡的小众门店。我们坚持从产地直采咖啡豆，以传统烘焙工艺保留咖啡本味，每一杯都由资深咖啡师手工制作。</p>
+                    <p>我们相信，好咖啡不仅是饮品，更是一种生活态度。在这里，你可以享受安静的独处时光，也可以和朋友畅谈，感受咖啡带来的温暖与治愈。</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fa-solid fa-check"></i> 产地直采咖啡豆
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-check"></i> 手工现磨现做
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-check"></i> 无添加蔗糖
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 菜单区域（优化卡片、新增标签） -->
+    <section id="menu" class="menu section-animate">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-title-line"></span> 咖啡菜单 <span class="section-title-line"></span>
+            </h2>
+            <p class="menu-subtitle text-center mb-8">精选四款人气咖啡，满足你的味蕾</p>
+            <div class="menu-grid">
+                <!-- 菜单1 -->
+                <div class="menu-item card-hover">
+                    <div class="menu-tag">经典</div>
+                    <img src="images/美式.png" alt="美式咖啡" class="img-hover-zoom">
+                    <div class="menu-item-content">
+                        <h3>美式咖啡</h3>
+                        <p>纯粹黑咖啡，口感醇厚，提神醒脑</p>
+                        <div class="menu-bottom">
+                            <span class="price">¥22</span>
+                            <button class="btn btn-sm">加入购物车</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 菜单2 -->
+                <div class="menu-item card-hover">
+                    <div class="menu-tag popular">热销</div>
+                    <img src="images/拿铁.png" alt="拿铁咖啡" class="img-hover-zoom">
+                    <div class="menu-item-content">
+                        <h3>拿铁咖啡</h3>
+                        <p>浓缩咖啡+新鲜牛奶，口感丝滑</p>
+                        <div class="menu-bottom">
+                            <span class="price">¥28</span>
+                            <button class="btn btn-sm">加入购物车</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 菜单3 -->
+                <div class="menu-item card-hover">
+                    <div class="menu-tag">推荐</div>
+                    <img src="images/卡布奇诺.png" alt="卡布奇诺" class="img-hover-zoom">
+                    <div class="menu-item-content">
+                        <h3>卡布奇诺</h3>
+                        <p>浓缩咖啡+奶泡，奶香与咖啡香平衡</p>
+                        <div class="menu-bottom">
+                            <span class="price">¥30</span>
+                            <button class="btn btn-sm">加入购物车</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 菜单4 -->
+                <div class="menu-item card-hover">
+                    <div class="menu-tag">甜口</div>
+                    <img src="images/微信图片_20251127181528_111_76.png" alt="焦糖玛奇朵" class="img-hover-zoom">
+                    <div class="menu-item-content">
+                        <h3>焦糖玛奇朵</h3>
+                        <p>浓缩咖啡+牛奶+焦糖酱，甜而不腻</p>
+                        <div class="menu-bottom">
+                            <span class="price">¥32</span>
+                            <button class="btn btn-sm">加入购物车</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们（优化表单、新增图标） -->
+    <section id="contact" class="contact section-animate">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-title-line"></span> 联系我们 <span class="section-title-line"></span>
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h3>门店地址</h3>
+                    <p>辽宁省沈阳市建国路88号</p>
+                    
+                    <div class="contact-icon mt-6">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <h3>营业时间</h3>
+                    <p>周一至周五：8:00 - 20:00</p>
+                    <p>周末：9:00 - 21:00</p>
+                    
+                    <div class="contact-icon mt-6">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h3>联系电话</h3>
+                    <p>155-2447-7026</p>
+                    
+                    <!-- 社交图标 -->
+                    <div class="social-icons mt-8">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-weixin"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-weibo"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form card-hover">
+                    <h3 class="form-title">留言给我们</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name" class="form-label">你的姓名</label>
+                            <div class="form-icon-wrapper">
+                                <i class="fa-solid fa-user form-input-icon"></i>
+                                <input type="text" id="name" placeholder="请输入你的姓名" required class="form-input">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">你的邮箱</label>
+                            <div class="form-icon-wrapper">
+                                <i class="fa-solid fa-envelope form-input-icon"></i>
+                                <input type="email" id="email" placeholder="请输入你的邮箱" required class="form-input">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">留言内容</label>
+                            <div class="form-icon-wrapper">
+                                <i class="fa-solid fa-comment form-input-icon"></i>
+                                <textarea id="message" placeholder="请输入你的留言" rows="4" required class="form-input"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">发送留言 <i class="fa-solid fa-paper-plane ml-2"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚（优化布局、新增导航） -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h3><i class="fa-solid fa-mug-hot"></i> The Daily Grind</h3>
+                    <p>一杯好咖啡，一种生活态度</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#about">关于我们</a></li>
+                        <li><a href="#menu">咖啡菜单</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>联系我们</h4>
+                    <p><i class="fa-solid fa-map-marker-alt mr-2"></i> 辽宁省沈阳市建国路88号</p>
+                    <p><i class="fa-solid fa-phone mr-2"></i> 155-2447-7026</p>
+                    <p><i class="fa-solid fa-envelope mr-2"></i> contact@thedailygrind.com</p>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Daily Grind 咖啡站. 保留所有权利.</p>
+                <p class="footer-copyright">Designed with <i class="fa-solid fa-heart text-red-500"></i> by 咖啡爱好者</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- 引入JavaScript实现交互 -->
+    <script src="script.js"></script>
+</body>
+</html>
